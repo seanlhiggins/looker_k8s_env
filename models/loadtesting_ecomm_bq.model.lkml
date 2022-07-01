@@ -10,7 +10,7 @@ datagroup: loadtesting_ecomm_bq_default_datagroup {
 
 persist_with: loadtesting_ecomm_bq_default_datagroup
 
-explore: distribution_centers {}
+# explore: distribution_centers {}
 
 explore: order_items {
   join: users {
