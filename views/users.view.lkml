@@ -69,9 +69,15 @@ view: users {
     sql: ${TABLE}.longitude ;;
   }
 
+  dimension: location {
+    type: location
+    sql_latitude: ROUND(${latitude},3) ;;
+    sql_longitude: ROUND(${longitude},3) ;;
+  }
   dimension: state {
     type: string
     sql: ${TABLE}.state ;;
+    map_layer_name: us_states
   }
 
   dimension: traffic_source {
